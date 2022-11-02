@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="background">
+
+    <!-- 1번 구간 시작 -->
+
+    <div class="todotitle">
+        <div class="title1 blank"></div>
+
+        <div class="title1 titletext">To do List</div>
+
+        <div class="title1 titlebutton">
+            <button class="addbutton">추가</button>
+            <select class="dropdownbutton">
+                <option value="">====정렬기준 선택====</option>
+                <option value="priority">우선순위 정렬</option>
+                <option value="name">이름순 정렬</option>
+                <option value="time">시간순 정렬</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- 2번 구간 시작 -->
+
+    <div class="tablediv">
+        <table class="tableorigin">
+            <tr class="tablehead">
+                <th>SUN</th>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>TUR</th>
+                <th>FRI</th>
+                <th>SAT</th>
+            </tr>
+
+            <tr class="tablecontent">
+
+                <td class="zero">
+                    <div class="boxbox"></div>
+                </td>
+
+                <td class="one">
+                    <div class="boxbox"></div>
+                </td>
+
+                <td class="two">
+                    <div class="boxbox"></div>
+                </td>
+
+                <td class="three">
+                    <div class="boxbox"></div>
+                </td>
+
+                <td class="four">
+                    <div class="boxbox"></div>
+                </td>
+
+                <td class="five">
+                    <div class="boxbox"></div>
+                </td>
+
+                <td class="six">
+                    <div class="boxbox"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- 3번 구간 시작 -->
+
+    <div class="third">
+
+        <button class="Xbutton">X</button>
+
+        <div class="todo">
+            <span>일정 : </span>
+            <input class="todoinput" type="text">
+
+            <span>중요도 : </span>
+            <select class="prioritydropdown">
+                <option value="sang">상</option>
+                <option value="jung">중</option>
+                <option value="ha">하</option>
+            </select>
+        </div>
+
+        <div class="day">
+            <span>요일 : </span>
+            <select class="startday">
+                <option value="1">일</option>
+                <option value="2">월</option>
+                <option value="3">화</option>
+                <option value="4">수</option>
+                <option value="5">목</option>
+                <option value="6">금</option>
+                <option value="7">토</option>
+            </select>
+            <span> ~ </span>
+            <select class="endday">
+                <option value="1">일</option>
+                <option value="2">월</option>
+                <option value="3">화</option>
+                <option value="4">수</option>
+                <option value="5">목</option>
+                <option value="6">금</option>
+                <option value="7">토</option>
+            </select>
+        </div>
+
+        <div class="time">
+            <span>시간 : </span>
+            <input type="time" class="starttime">
+            <span> ~ </span>
+            <input type="time" class="endtime">
+        </div>
+
+        <div class="buttons">
+            <button class="register">등록</button>
+            <button class="cancel">취소</button>
+        </div>
+
+    </div>
+
+    <!-- 5번 구간 시작 -->
+
+    <div class="fifth">
+        <div class="todo">
+            <span>일정 : </span>
+            <input class="todoinput modifyinput" type="text" disabled>
+
+            <span>중요도 : </span>
+            <select class="prioritydropdown modifydropdown" disabled>
+                <option value="sang">상</option>
+                <option value="jung">중</option>
+                <option value="ha">하</option>
+            </select>
+        </div>
+
+        <div class="day">
+            <span>요일 : </span>
+            <select class="startday modifystartday" disabled>
+                <option value="1">일</option>
+                <option value="2">월</option>
+                <option value="3">화</option>
+                <option value="4">수</option>
+                <option value="5">목</option>
+                <option value="6">금</option>
+                <option value="7">토</option>
+            </select>
+            <span> ~ </span>
+            <select class="endday modifyendday" disabled>
+                <option value="1">일</option>
+                <option value="2">월</option>
+                <option value="3">화</option>
+                <option value="4">수</option>
+                <option value="5">목</option>
+                <option value="6">금</option>
+                <option value="7">토</option>
+            </select>
+        </div>
+
+        <div class="time">
+            <span>시간 : </span>
+            <input type="time" class="starttime modifystarttime" disabled>
+            <span> ~ </span>
+            <input type="time" class="endtime modifyendtime" disabled>
+        </div>
+
+        <div class="buttons">
+            <button class="modify modify2">수정</button>
+            <button class="modifydelete">삭제</button>
+            <button class="modifycancel">취소</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
